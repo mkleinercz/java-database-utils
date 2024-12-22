@@ -1,0 +1,23 @@
+===========================
+ERROR
+===========================
+The Java version: 23, that is selected for the project is not supported by Gradle 7.3.
+The IDE will attempt to use Gradle 8.10 to gather the project information.
+
+
+Tato chyba v NetBeans naznaèuje, že projekt je nakonfigurován s verzí Javy (Java 23),
+která není podporována aktuální verzí Gradle (7.3).
+
+NetBeans se snaží použít novìjší Gradle (8.10),
+ale nemusí to fungovat správnì, pokud konfigurace projektu není kompatibilní.
+
+===========================
+Kontrola verze Gradle
+===========================
+gradlew --version
+
+===========================
+UPGRADE na 8.10
+===========================
+gradlew wrapper --gradle-version 8.10
+

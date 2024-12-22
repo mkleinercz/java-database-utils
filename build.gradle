@@ -1,0 +1,27 @@
+plugins {
+    id 'java-library'
+    id 'application'
+    id 'java'
+    id 'maven-publish'
+}
+
+mainClassName='runners.database.TestConnection'
+
+repositories {
+    jcenter()}
+
+dependencies {
+    implementation 'org.postgresql:postgresql:42.4.0' // https://mvnrepository.com/artifact/org.postgresql/postgresql
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+}
+
+compileJava.options.encoding = 'UTF-8' 
+compileTestJava.options.encoding = 'UTF-8'
+javadoc.options.encoding = 'UTF-8'
+
+sourceCompatibility = 11
+targetCompatibility =11
+
+group = "cz.mks"
+version = "5.0"
